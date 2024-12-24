@@ -11,7 +11,7 @@
                 "dbo.Users",
                 c => new
                     {
-                        Id = c.String(nullable: false, maxLength: 128),
+                        Id = c.Int(nullable: false, identity: true),
                         FirstName = c.String(),
                         LastName = c.String(),
                         Email = c.String(),

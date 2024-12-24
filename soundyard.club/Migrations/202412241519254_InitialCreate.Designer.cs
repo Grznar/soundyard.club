@@ -13,7 +13,7 @@ namespace soundyard.club.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202412241336228_InitialCreate"; }
+            get { return "202412241519254_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source
