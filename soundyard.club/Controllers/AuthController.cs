@@ -30,7 +30,8 @@ namespace soundyard.club.Controllers
                     FirstName = userForRegistration.FirstName,
                     LastName = userForRegistration.LastName,
                     Email = userForRegistration.Email,
-                    Role = "User" 
+                    Role = "User" ,
+                    Password = userForRegistration.Password
                 };
 
                 
@@ -60,13 +61,20 @@ namespace soundyard.club.Controllers
                 User user = _context.Users.FirstOrDefault(u => u.Email == userForLogin.Email);
 
                 
-                if (user != null && userForLogin.Password == "testpassword")    
+                if (user != null && (user.Password == userForLogin.Password))   
                 {
                     return RedirectToAction("Dashboard", "Home");
                 }
+                else
+                {
+                    ModelState.AddModelError("", "Invalid password.");
+                }
 
                 
-                ModelState.AddModelError("", "Invalid email or password.");
+            }
+            else
+            {
+                ModelState.AddModelError("", "User not found.");
             }
 
             return View(userForLogin);

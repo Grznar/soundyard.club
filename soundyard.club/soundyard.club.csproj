@@ -164,6 +164,10 @@
     <Compile Include="Migrations\202412241519254_InitialCreate.Designer.cs">
       <DependentUpon>202412241519254_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202412241534048_AddPasswordColumn.cs" />
+    <Compile Include="Migrations\202412241534048_AddPasswordColumn.Designer.cs">
+      <DependentUpon>202412241534048_AddPasswordColumn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppDbContext.cs" />
     <Compile Include="Models\User.cs" />
@@ -222,9 +226,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Dashboard.cshtml" />
     <Content Include="Views\Auth\Register.cshtml" />
     <Content Include="Views\Auth\Login.cshtml" />
   </ItemGroup>
@@ -261,6 +263,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202412241519254_InitialCreate.resx">
       <DependentUpon>202412241519254_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412241534048_AddPasswordColumn.resx">
+      <DependentUpon>202412241534048_AddPasswordColumn.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
