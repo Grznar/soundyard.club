@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace soundyard.club.Controllers
 {
@@ -63,6 +64,7 @@ namespace soundyard.club.Controllers
                 
                 if (user != null && (user.Password == userForLogin.Password))   
                 {
+                    FormsAuthentication.SetAuthCookie(user.Email, false);
                     return RedirectToAction("Dashboard", "Home");
                 }
                 else
