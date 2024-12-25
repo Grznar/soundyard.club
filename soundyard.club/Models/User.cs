@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace soundyard.club.Models
+namespace club.soundyard.web.Models
 {
     public class User
     {
@@ -16,7 +16,9 @@ namespace soundyard.club.Models
         public string Email { get; set; } 
         public string Role { get; set; }
 
-        [StringLength(50)]
+
+
+        [MaxLength(50)]
         public string Agreement { get; set; }
     }
 }

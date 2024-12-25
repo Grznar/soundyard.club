@@ -1,4 +1,4 @@
-﻿namespace soundyard.club.Migrations
+﻿namespace club.soundyard.web.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

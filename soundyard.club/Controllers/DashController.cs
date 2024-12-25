@@ -4,8 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
-using soundyard.club.Models;
-namespace soundyard.club.Controllers
+using club.soundyard.web.Models;
+namespace club.soundyard.web.Controllers
 {
     public class DashController : Controller
     {
@@ -17,7 +17,14 @@ namespace soundyard.club.Controllers
 
         public ActionResult Index()
         {
-            return RedirectToAction("Dashboard", "Dash");
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Login", "Auth");
+            }
+            else
+            {
+                return RedirectToAction("Dashboard", "Dash");
+            }
         }
 
        
@@ -25,7 +32,7 @@ namespace soundyard.club.Controllers
         {
             if (!User.Identity.IsAuthenticated)
             {
-                
+                return RedirectToAction("Login", "Auth");
             }
             string userEmail = User.Identity.Name;
             User user = _context.Users.FirstOrDefault(u => u.Email == userEmail);
@@ -47,7 +54,7 @@ namespace soundyard.club.Controllers
         public ActionResult Logout()
         {
             FormsAuthentication.SignOut();  
-            return RedirectToAction("Dashboard", "Dashb");  
+            return RedirectToAction("Login", "Auth");  
         }
 
 

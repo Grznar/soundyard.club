@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace soundyard.club
+namespace club.soundyard.web
 {
     public class RouteConfig
     {
@@ -16,7 +16,7 @@ namespace soundyard.club
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Dash", action = "Dashboard", id = UrlParameter.Optional }
+                defaults: new { controller = "Auth", action = "Register", id = UrlParameter.Optional }
             );
         }
     }

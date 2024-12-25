@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace soundyard.club.Models
+namespace club.soundyard.web.Models
 {
     public class UserForRegistration
     {

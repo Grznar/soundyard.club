@@ -1,12 +1,14 @@
-﻿using soundyard.club.Models;
+﻿using club.soundyard.web.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
+using System.Data.Entity.Validation;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 
-namespace soundyard.club.Controllers
+namespace club.soundyard.web.Controllers
 {
     public class AuthController : Controller
     {
@@ -26,31 +28,40 @@ namespace soundyard.club.Controllers
         {
             if (ModelState.IsValid)
             {
-                
+                string hashedPassword = BCrypt.Net.BCrypt.HashPassword(userForRegistration.Password);
                 User user = new User
                 {
                     FirstName = userForRegistration.FirstName,
                     LastName = userForRegistration.LastName,
                     Email = userForRegistration.Email,
                     Role = "User" ,
-                    Password = userForRegistration.Password
+                    Password = hashedPassword
                 };
+                if (user.Email.ToLower().Contains("@soundyard"))
+                    {
+                    user.Role = "Admin";
+                    }
 
                 if (user.Role == "Admin")
                 {
-                    user.Agreement = "Jsem klasický uživatel, a souhlasím s podmínkamy používání platformy";
+                    user.Agreement = "Admin";
                 }
                 else
                 {
-                    user.Agreement = "Jsem Admin , a souhlasím s podmínkamy spravování platformy";
+                    user.Agreement = " just a User";
                 }
 
                 _context.Users.Add(user);
-                
 
-                
+                try
+                {
+
                     _context.SaveChanges();
-                
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
 
                 return RedirectToAction("Login");
             }
@@ -72,15 +83,20 @@ namespace soundyard.club.Controllers
                 User user = _context.Users.FirstOrDefault(u => u.Email == userForLogin.Email);
 
                 
-                if (user != null && (user.Password == userForLogin.Password))   
+                if (user != null)   
                 {
-                    FormsAuthentication.SetAuthCookie(user.Email, false);
-                    return RedirectToAction("Dashboard", "Dash");
+                    bool isPasswordValid = BCrypt.Net.BCrypt.Verify(userForLogin.Password, user.Password);
+                    if (isPasswordValid)
+                    {
+                        FormsAuthentication.SetAuthCookie(user.Email, false);
+                        return RedirectToAction("Dashboard", "Dash");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "Invalid password.");
+                    }
                 }
-                else
-                {
-                    ModelState.AddModelError("", "Invalid password.");
-                }
+                
 
                 
             }

@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
-namespace soundyard.club.Models
+namespace club.soundyard.web.Models
 {
     public class AppDbContext : DbContext
     {
