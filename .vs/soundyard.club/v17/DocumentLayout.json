@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|c:\\users\\admin\\desktop\\sound\\soundyard.club\\soundyard.club\\controllers\\dashcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|solutionrelative:soundyard.club\\controllers\\dashcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|solutionrelative:soundyard.club\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|solutionrelative:soundyard.club\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|solutionrelative:soundyard.club\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|c:\\users\\admin\\desktop\\sound\\soundyard.club\\soundyard.club\\controllers\\dashcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|solutionrelative:soundyard.club\\controllers\\dashcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|c:\\users\\admin\\desktop\\sound\\soundyard.club\\soundyard.club\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|solutionrelative:soundyard.club\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\migrations\\202412251220364_updateagreementcolumn1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|solutionrelative:soundyard.club\\migrations\\202412251220364_updateagreementcolumn1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\views\\dashboard\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|solutionrelative:soundyard.club\\views\\dashboard\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|solutionrelative:soundyard.club\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|solutionrelative:soundyard.club\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|solutionrelative:soundyard.club\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|solutionrelative:soundyard.club\\models\\userforregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|solutionrelative:soundyard.club\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|solutionrelative:soundyard.club\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -85,6 +73,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\content\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{3F993D8C-64C3-4285-AEB9-AB92C0BECE58}|soundyard.club\\soundyard.club.csproj|solutionrelative:soundyard.club\\content\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Views\\Dashboard\\Dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:soundyard.club\\Views\\Dashboard\\Dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Models\\Role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:soundyard.club\\Models\\Role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,43 +90,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "soundyard.club\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Controllers\\AuthController.cs",
               "RelativeToolTip": "soundyard.club\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAowDwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAwwF4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-24T14:42:00.885Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Web.config",
               "RelativeDocumentMoniker": "soundyard.club\\Web.config",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Web.config",
               "RelativeToolTip": "soundyard.club\\Web.config",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAABsAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAmwCEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2024-12-24T15:43:39.474Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "DashController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Controllers\\DashController.cs",
               "RelativeDocumentMoniker": "soundyard.club\\Controllers\\DashController.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Controllers\\DashController.cs",
               "RelativeToolTip": "soundyard.club\\Controllers\\DashController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwAcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-24T13:34:35.302Z",
               "EditorCaption": ""
@@ -138,6 +134,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "soundyard.club\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "soundyard.club\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T15:35:43.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "RouteConfig.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\App_Start\\RouteConfig.cs",
               "RelativeDocumentMoniker": "soundyard.club\\App_Start\\RouteConfig.cs",
@@ -145,25 +154,11 @@
               "RelativeToolTip": "soundyard.club\\App_Start\\RouteConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T14:48:06.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T14:48:06.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Global.asax.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Global.asax.cs",
-              "RelativeDocumentMoniker": "soundyard.club\\Global.asax.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Global.asax.cs",
-              "RelativeToolTip": "soundyard.club\\Global.asax.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T15:16:16.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "202412251220364_UpdateAgreementColumn1.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Migrations\\202412251220364_UpdateAgreementColumn1.cs",
               "RelativeDocumentMoniker": "soundyard.club\\Migrations\\202412251220364_UpdateAgreementColumn1.cs",
@@ -175,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 18,
               "Title": "Dashboard.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Views\\Dashboard\\Dashboard.cshtml",
               "RelativeDocumentMoniker": "soundyard.club\\Views\\Dashboard\\Dashboard.cshtml",
@@ -187,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Startup.cs",
               "RelativeDocumentMoniker": "soundyard.club\\Startup.cs",
@@ -199,7 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "soundyard.club\\Views\\Shared\\Error.cshtml",
@@ -211,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "soundyard.club\\Views\\Shared\\_Layout.cshtml",
@@ -223,19 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Views\\Auth\\Register.cshtml",
-              "RelativeDocumentMoniker": "soundyard.club\\Views\\Auth\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Views\\Auth\\Register.cshtml",
-              "RelativeToolTip": "soundyard.club\\Views\\Auth\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-24T14:45:56.677Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "FilterConfig.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\App_Start\\FilterConfig.cs",
               "RelativeDocumentMoniker": "soundyard.club\\App_Start\\FilterConfig.cs",
@@ -247,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "Configuration.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Migrations\\Configuration.cs",
               "RelativeDocumentMoniker": "soundyard.club\\Migrations\\Configuration.cs",
@@ -259,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "UserForLogin.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Models\\UserForLogin.cs",
               "RelativeDocumentMoniker": "soundyard.club\\Models\\UserForLogin.cs",
@@ -271,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Models\\User.cs",
               "RelativeDocumentMoniker": "soundyard.club\\Models\\User.cs",
@@ -283,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "UserForRegistration.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Models\\UserForRegistration.cs",
               "RelativeDocumentMoniker": "soundyard.club\\Models\\UserForRegistration.cs",
@@ -295,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Models\\Role.cs",
               "RelativeDocumentMoniker": "soundyard.club\\Models\\Role.cs",
@@ -307,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 14,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Views\\Auth\\Login.cshtml",
               "RelativeDocumentMoniker": "soundyard.club\\Views\\Auth\\Login.cshtml",
@@ -319,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 15,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Models\\AppDbContext.cs",
               "RelativeDocumentMoniker": "soundyard.club\\Models\\AppDbContext.cs",
@@ -331,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 16,
               "Title": "dashboard.css",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Content\\dashboard.css",
               "RelativeDocumentMoniker": "soundyard.club\\Content\\dashboard.css",
@@ -343,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 17,
               "Title": "bootstrap.css",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\sound\\soundyard.club\\soundyard.club\\Content\\bootstrap.css",
               "RelativeDocumentMoniker": "soundyard.club\\Content\\bootstrap.css",

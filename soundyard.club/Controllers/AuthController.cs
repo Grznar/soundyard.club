@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Validation;
 using System.Linq;
+using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
@@ -28,6 +29,8 @@ namespace club.soundyard.web.Controllers
         {
             if (ModelState.IsValid)
             {
+                
+
                 string hashedPassword = BCrypt.Net.BCrypt.HashPassword(userForRegistration.Password);
                 User user = new User
                 {
@@ -48,7 +51,7 @@ namespace club.soundyard.web.Controllers
                 }
                 else
                 {
-                    user.Agreement = " just a User";
+                    user.Agreement = "User";
                 }
 
                 _context.Users.Add(user);
@@ -62,11 +65,49 @@ namespace club.soundyard.web.Controllers
                 {
                     Console.WriteLine(ex.Message);
                 }
-
+                SendActivationEmail(userForRegistration.Email);
                 return RedirectToAction("Login");
             }
 
             return View(userForRegistration);
+        }
+        private void SendActivationEmail(string receiver)
+        {
+            string subject = "Activation Email";
+            string body = "Click on the following link to activate your account.";
+
+            try
+            {
+                MailMessage mailMessage = new MailMessage("noreply@gmail.com", receiver, subject, body);
+                SmtpClient smtpClient = new SmtpClient("212.71.162.103",587);
+                
+
+
+
+
+
+
+                smtpClient.Send(mailMessage);
+                Console.WriteLine("Email send");
+            }
+            catch (SmtpException ex)
+            {
+                
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("SMTP Exception: " + ex.Message);
+                Console.WriteLine("Stack Trace: " + ex.StackTrace);
+
+                // Případně vypište i další vlastnosti výjimky
+                Console.WriteLine("Status Code: " + ex.StatusCode);
+                Console.WriteLine("Inner Exception: " + ex.InnerException?.Message);
+            }
+            catch (Exception ex)
+            {
+                // Zachytí obecné chyby, které nejsou SmtpException
+                Console.WriteLine("General Exception: " + ex.Message);
+                Console.WriteLine("Stack Trace: " + ex.StackTrace);
+            }
+            
         }
         public ActionResult Login()
         {
