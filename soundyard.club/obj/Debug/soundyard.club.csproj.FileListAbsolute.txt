@@ -108,3 +108,6 @@ C:\Users\Admin\Desktop\sound\soundyard.club\soundyard.club\obj\Debug\soundyard.c
 C:\Users\Admin\Desktop\sound\soundyard.club\soundyard.club\obj\Debug\soundyard.club.Migrations.InitialCreate.resources
 C:\Users\Admin\Desktop\sound\soundyard.club\soundyard.club\obj\Debug\soundyard.club.csproj.GenerateResource.cache
 C:\Users\Admin\Desktop\sound\soundyard.club\soundyard.club\obj\Debug\soundyard.club.Migrations.AddPasswordColumn.resources
+C:\Users\Admin\Desktop\sound\soundyard.club\soundyard.club\obj\Debug\soundyard.club.Migrations.AddAgreementToUser.resources
+C:\Users\Admin\Desktop\sound\soundyard.club\soundyard.club\obj\Debug\soundyard.club.Migrations.UpdateAgreementColumn.resources
+C:\Users\Admin\Desktop\sound\soundyard.club\soundyard.club\obj\Debug\soundyard.club.Migrations.UpdateAgreementColumn1.resources

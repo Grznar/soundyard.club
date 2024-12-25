@@ -2,7 +2,22 @@
     ViewBag.Title = "Dashboard";
 }
 
-﻿@section Sidebar {
+@section Sidebar {
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <h2>Welcome to your Dashboard</h2>
+        <p>Your Agreement: @ViewBag.Agreement</p>
+        <a href="@Url.Action("Logout", "Dash")">Logout</a>
+    }
+    else
+    {
+        <h2>Welcome to the Dashboard!</h2>
+        <p>Please log in or register to access more features.</p>
+        <a href="@Url.Action("Login", "Auth")">Login</a>
+        <a href = "@Url.Action("Register", "Auth")">Register</a>
+    }
+
     <ul class="nav flex-column">
         <li class="nav-item">
             <a class="nav-link active" href="#">
@@ -67,10 +82,6 @@
                 <td>dolor</td>
                 <td>sit</td>
             </tr>
-            <!-- Další řádky -->
         </tbody>
     </table>
 </div>
-
-
-

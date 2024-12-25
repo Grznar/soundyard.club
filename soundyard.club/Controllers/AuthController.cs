@@ -21,6 +21,7 @@ namespace soundyard.club.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [AllowAnonymous]
         public ActionResult Register(UserForRegistration userForRegistration)
         {
             if (ModelState.IsValid)
@@ -35,7 +36,15 @@ namespace soundyard.club.Controllers
                     Password = userForRegistration.Password
                 };
 
-                
+                if (user.Role == "Admin")
+                {
+                    user.Agreement = "Jsem klasický uživatel, a souhlasím s podmínkamy používání platformy";
+                }
+                else
+                {
+                    user.Agreement = "Jsem Admin , a souhlasím s podmínkamy spravování platformy";
+                }
+
                 _context.Users.Add(user);
                 
 
@@ -54,6 +63,7 @@ namespace soundyard.club.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public ActionResult Login(UserForLogin userForLogin)
         {
             if (ModelState.IsValid)
@@ -65,7 +75,7 @@ namespace soundyard.club.Controllers
                 if (user != null && (user.Password == userForLogin.Password))   
                 {
                     FormsAuthentication.SetAuthCookie(user.Email, false);
-                    return RedirectToAction("Dashboard", "Home");
+                    return RedirectToAction("Dashboard", "Dash");
                 }
                 else
                 {
