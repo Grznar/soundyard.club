@@ -7,6 +7,24 @@
     height: 16px;
     vertical-align: text-bottom;
 }
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.main {
+    margin-left: 240px; /* Zajistí, že hlavní obsah nezačne za sidebarem */
+    padding-top: 1rem;
+}
 
 /*
  * Sidebar
@@ -21,7 +39,10 @@
     padding: 48px 0 0; /* Height of navbar */
     box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
 }
-
+.main
+{
+margin-left:0;
+}
 .sidebar-sticky {
     position: relative;
     top: 0;

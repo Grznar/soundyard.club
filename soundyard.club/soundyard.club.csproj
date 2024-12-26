@@ -200,6 +200,10 @@
     <Compile Include="Migrations\202412251456276_UpdateAgreementLenght.Designer.cs">
       <DependentUpon>202412251456276_UpdateAgreementLenght.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202412261335254_MigraceKonec.cs" />
+    <Compile Include="Migrations\202412261335254_MigraceKonec.Designer.cs">
+      <DependentUpon>202412261335254_MigraceKonec.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppDbContext.cs" />
     <Compile Include="Models\User.cs" />
@@ -225,8 +229,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
-    <Content Include="Content\dash.css" />
-    <Content Include="Content\dashboard.css" />
+    <Content Include="Content\mainstyle2.css" />
+    <Content Include="Content\mainstyle.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -249,7 +253,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Views\css\dashhboard.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -315,6 +318,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202412251456276_UpdateAgreementLenght.resx">
       <DependentUpon>202412251456276_UpdateAgreementLenght.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412261335254_MigraceKonec.resx">
+      <DependentUpon>202412261335254_MigraceKonec.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

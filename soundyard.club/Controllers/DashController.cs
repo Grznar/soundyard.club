@@ -51,6 +51,7 @@ namespace club.soundyard.web.Controllers
         {
             if (!User.Identity.IsAuthenticated)
             {
+                ViewBag.Agreement = "";
                 return RedirectToAction("Login", "Auth");
             }
             string userEmail = User.Identity.Name;
