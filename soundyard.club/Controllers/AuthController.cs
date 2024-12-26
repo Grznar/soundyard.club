@@ -29,8 +29,13 @@ namespace club.soundyard.web.Controllers
         {
             if (ModelState.IsValid)
             {
-                
 
+                User existingUser = _context.Users.FirstOrDefault(u => u.Email == userForRegistration.Email);
+                if (existingUser != null)
+                {
+                    ModelState.AddModelError("Email", "This email address is already in use.");
+                    return View(userForRegistration);
+                }
                 string hashedPassword = BCrypt.Net.BCrypt.HashPassword(userForRegistration.Password);
                 User user = new User
                 {
@@ -97,13 +102,13 @@ namespace club.soundyard.web.Controllers
                 Console.WriteLine("SMTP Exception: " + ex.Message);
                 Console.WriteLine("Stack Trace: " + ex.StackTrace);
 
-                // Případně vypište i další vlastnosti výjimky
+                
                 Console.WriteLine("Status Code: " + ex.StatusCode);
                 Console.WriteLine("Inner Exception: " + ex.InnerException?.Message);
             }
             catch (Exception ex)
             {
-                // Zachytí obecné chyby, které nejsou SmtpException
+                
                 Console.WriteLine("General Exception: " + ex.Message);
                 Console.WriteLine("Stack Trace: " + ex.StackTrace);
             }
@@ -126,16 +131,20 @@ namespace club.soundyard.web.Controllers
                 
                 if (user != null)   
                 {
-                    bool isPasswordValid = BCrypt.Net.BCrypt.Verify(userForLogin.Password, user.Password);
-                    if (isPasswordValid)
-                    {
+                    
+                        bool isPasswordValid = BCrypt.Net.BCrypt.Verify(userForLogin.Password, user.Password);
+                        if (isPasswordValid)
+                        {
+                        Session["UserRole"] = user.Role;
+
                         FormsAuthentication.SetAuthCookie(user.Email, false);
-                        return RedirectToAction("Dashboard", "Dash");
-                    }
-                    else
-                    {
-                        ModelState.AddModelError("", "Invalid password.");
-                    }
+                            return RedirectToAction("Dashboard", "Dash");
+                        }
+                        else
+                        {
+                            ModelState.AddModelError("", "Invalid password.");
+                        }
+                    
                 }
                 
 
@@ -147,6 +156,15 @@ namespace club.soundyard.web.Controllers
             }
 
             return View(userForLogin);
+        }
+        [Authorize]
+        public ActionResult Logout()
+        {
+
+            FormsAuthentication.SignOut();
+            HttpContext.Response.Cookies.Clear();
+            Session.Abandon();
+            return RedirectToAction("Login", "Auth");
         }
 
     }

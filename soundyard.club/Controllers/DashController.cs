@@ -14,7 +14,7 @@ namespace club.soundyard.web.Controllers
         {
             _context = new AppDbContext();
         }
-
+        
         public ActionResult Index()
         {
             if (!User.Identity.IsAuthenticated)
@@ -27,7 +27,26 @@ namespace club.soundyard.web.Controllers
             }
         }
 
+        public ActionResult Report()
+        {
+            return View();
+        }
+
+
        
+        public ActionResult Admin()
+        {
+
+            if (Session["UserRole"] != null && Session["UserRole"].ToString() == "Admin")
+            {
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Dashboard", "Dash");
+            }
+        }
+
         public ActionResult Dashboard()
         {
             if (!User.Identity.IsAuthenticated)
@@ -37,25 +56,16 @@ namespace club.soundyard.web.Controllers
             string userEmail = User.Identity.Name;
             User user = _context.Users.FirstOrDefault(u => u.Email == userEmail);
             
-            ViewBag.Agreement = user?.Agreement;  
+            ViewBag.Agreement = user?.Agreement;
+            
+
             return View();
 
             
         }
 
-        [Authorize]
-        public ActionResult Agreement()
-        {
-            return View();
-        }
-        [HttpPost]
-        [Authorize]
+        
        
-        public ActionResult Logout()
-        {
-            FormsAuthentication.SignOut();  
-            return RedirectToAction("Login", "Auth");  
-        }
 
 
     }
