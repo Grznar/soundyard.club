@@ -51,15 +51,22 @@ namespace club.soundyard.web.Controllers
         {
             if (!User.Identity.IsAuthenticated)
             {
-                ViewBag.Agreement = "";
+               
                 return RedirectToAction("Login", "Auth");
             }
             string userEmail = User.Identity.Name;
             User user = _context.Users.FirstOrDefault(u => u.Email == userEmail);
             
-            ViewBag.Agreement = user?.Agreement;
-            
+           
 
+            if (user != null)
+            {
+                ViewBag.Agreement = user.Agreement;
+            }
+            else
+            {
+                ViewBag.Agreement = "";  
+            }
             return View();
 
             

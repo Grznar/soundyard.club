@@ -95,22 +95,11 @@ namespace club.soundyard.web.Controllers
                 smtpClient.Send(mailMessage);
                 Console.WriteLine("Email send");
             }
-            catch (SmtpException ex)
-            {
-                
-                Console.WriteLine(ex.Message);
-                Console.WriteLine("SMTP Exception: " + ex.Message);
-                Console.WriteLine("Stack Trace: " + ex.StackTrace);
-
-                
-                Console.WriteLine("Status Code: " + ex.StatusCode);
-                Console.WriteLine("Inner Exception: " + ex.InnerException?.Message);
-            }
             catch (Exception ex)
             {
                 
-                Console.WriteLine("General Exception: " + ex.Message);
-                Console.WriteLine("Stack Trace: " + ex.StackTrace);
+                Console.WriteLine(ex.Message);
+                
             }
             
         }

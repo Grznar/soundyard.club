@@ -1,120 +1,120 @@
-﻿@{
-    ViewBag.Title = "Dashboard";
+﻿    @{
+        ViewBag.Title = "Dashboard";
 
     
-}
+    }
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewBag.Title - Dashboard</title>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewBag.Title - Dashboard</title>
 
     
-        <link href="~/Content/mainstyle.css" rel="stylesheet" />
+            <link href="~/Content/mainstyle.css" rel="stylesheet" />
     
-</head>
-<body>
-    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Soundyard.club</a>
-        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
-        <ul class="navbar-nav px-3">
-            <li class="nav-item text-nowrap">
-                <a class="nav-link" href="@Url.Action("Logout", "Auth")">Sign out</a>
-            </li>
-        </ul>
-    </nav>
+    </head>
+    <body>
+        <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Soundyard.club</a>
+            <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+            <ul class="navbar-nav px-3">
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link" href="@Url.Action("Logout", "Auth")">Sign out</a>
+                </li>
+            </ul>
+        </nav>
 
-    <div class="container-fluid">
-        <div class="row">
-            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-                <div class="sidebar-sticky">
-                    @if (User.Identity.IsAuthenticated)
-                    {
-                        <h2>Welcome to your Dashboard</h2>
-                        <p>Your Agreement: @ViewBag.Agreement</p>
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">
-                                    <span data-feather="home"></span>
-                                    Dashboard
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <span data-feather="file"></span>
-                                    Orders
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <span data-feather="shopping-cart"></span>
-                                    Products
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="@Url.Action("Report", "Dash")">
-                                    <span data-feather="bar-chart"></span>
-                                    Report
-                                </a>
-                            </li>
-                            @if (Session["UserRole"] != null && Session["UserRole"].ToString() == "Admin")
-                            { 
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                    <div class="sidebar-sticky">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <h2>Welcome to your Dashboard</h2>
+                            <p>Your Agreement: @ViewBag.Agreement</p>
+                            <ul class="nav flex-column">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="@Url.Action("Admin", "Dash")">
-                                        <span data-feather="bar-chart"></span>
-                                        Administration
+                                    <a class="nav-link active" href="#">
+                                        <span data-feather="home"></span>
+                                        Dashboard
                                     </a>
                                 </li>
-                            }
-                        </ul>
-                    }
-                    else
-                    {
-                        <h2>Welcome to the Dashboard!</h2>
-                        <p>Please log in or register to access more features.</p>
-                        <a href="@Url.Action("Login", "Auth")">Login</a>
-                        <a href="@Url.Action("Register", "Auth")">Register</a>
-                    }
-                </div>
-            </nav>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span data-feather="file"></span>
+                                        Orders
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span data-feather="shopping-cart"></span>
+                                        Products
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("Report", "Dash")">
+                                        <span data-feather="bar-chart"></span>
+                                        Report
+                                    </a>
+                                </li>
+                                @if (Session["UserRole"] != null && Session["UserRole"].ToString() == "Admin")
+                                { 
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="@Url.Action("Admin", "Dash")">
+                                            <span data-feather="bar-chart"></span>
+                                            Administration
+                                        </a>
+                                    </li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <h2>Welcome to the Dashboard!</h2>
+                            <p>Please log in or register to access more features.</p>
+                            <a href="@Url.Action("Login", "Auth")">Login</a>
+                            <a href="@Url.Action("Register", "Auth")">Register</a>
+                        }
+                    </div>
+                </nav>
 
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-                <h1 class="h2">Dashboard</h1>
+                <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                    <h1 class="h2">Dashboard</h1>
 
-                <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+                    <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
 
-                <h2>Section title</h2>
-                <div class="table-responsive">
-                    <table class="table table-striped table-sm">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Header</th>
-                                <th>Header</th>
-                                <th>Header</th>
-                                <th>Header</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1,001</td>
-                                <td>Lorem</td>
-                                <td>ipsum</td>
-                                <td>dolor</td>
-                                <td>sit</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </main>
+                    <h2>Section title</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-sm">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1,001</td>
+                                    <td>Lorem</td>
+                                    <td>ipsum</td>
+                                    <td>dolor</td>
+                                    <td>sit</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </main>
+            </div>
         </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.9.0/dist/feather.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script>
-    <script src="~/Scripts/dashboard.js"></script>
-</body>
-</html>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.9.0/dist/feather.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script>
+        <script src="~/Scripts/dashboard.js"></script>
+    </body>
+    </html>
